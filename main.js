@@ -93,7 +93,10 @@ app.on("ready", () => {
 
   mainWindow = new BrowserWindow({
     width: 1440,
-    height: 768,
+    height: 780,
+    // 不能改变窗口大小
+    resizable:false,
+
     icon: path.join(__dirname, "assets/icons/png/64x64.png"),
     //titleBarStyle: 'hidden',
     //frame: false,
@@ -108,7 +111,7 @@ app.on("ready", () => {
   mainWindow.loadURL("file://" + __dirname + "/index.html");
 
   // Display Dev Tools
-  mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);

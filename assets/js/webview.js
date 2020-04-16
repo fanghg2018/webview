@@ -1,7 +1,7 @@
 window.onresize = doLayout;
 
 onload = () => {
-  doLayout();
+  // doLayout();
   // Topbar functions
   homeButton();
   printButton();
