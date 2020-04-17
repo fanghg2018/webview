@@ -93,7 +93,7 @@ app.on("ready", () => {
 
   mainWindow = new BrowserWindow({
     width: 1440,
-    height: 780,
+    height: 779,
     // 不能改变窗口大小
     resizable:false,
 
