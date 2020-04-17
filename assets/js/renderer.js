@@ -8,8 +8,8 @@ webview.addEventListener('new-window', (e) => {
     // shell.openExternal(e.url)
     // window.open(e.url)
     // 内容重新显示到webview
-    webview.reload(e.url);
-    // webview.src=e.url
+    // webview.reloadIgnoringCache(e.url);
+    webview.src=e.url
     console.log(e.url)
   }
 });
