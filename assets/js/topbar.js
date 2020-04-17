@@ -2,6 +2,17 @@ const { remote } = require("electron");
 const { BrowserWindow } = remote;
 let print_win;
 
+onload = () => {
+  // doLayout();
+  // Topbar functions
+  homeButton();
+  printButton();
+  goButton();
+  insertCSSButton()
+  
+};
+
+
 function navigateTo(url) {
   document.querySelector("webview").src = url;
 }
@@ -26,6 +37,7 @@ function homeButton() {
 function goButton() {
   document.querySelector("#go_button").onclick = () => {
     let attribute = document.getElementById("input").value;
+    console.log(attribute);
     navigateTo( attribute );
   };
 }
