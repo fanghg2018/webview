@@ -10,7 +10,6 @@ webview.addEventListener('new-window', (e) => {
     // 内容重新显示到webview
     // webview.reloadIgnoringCache(e.url);
     webview.src=e.url
-    console.log(e.url)
-  }
+    }
 });
 
